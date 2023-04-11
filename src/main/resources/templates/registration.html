@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href="@{/style/registration.css}" type="text/css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link type="img" rel="icon" href="/static/img/icon.png">
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+</head>
+<body>
+<div id="page">
+
+  <div id="header">
+    <h1 class="logo">GreenShop</h1>
+    <div class="nav">
+      <form method="get" th:action="@{/product}">
+        <button class="nav_item">На главную</button>
+      </form>
+      <form method="get" th:action="@{/auth/login}">
+        <button class="nav_item">Вход</button>
+      </form>
+      <form method="get" th:action="@{/auth/registration}">
+        <button class="nav_item">Регистрация</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="container">
+    <div id="page_form">
+      <h2 class="h2">Регистрация</h2>
+      <form method="post" th:action="@{/auth/registration}" th:object="${person}">
+        <label for="login">Введите логин: </label>
+        <input class="input" type="text"  th:field="*{login}" placeholder="Введите логин" name="username" id="login">
+        <div style="font-size: 15px; color: red" th:if="${#fields.hasErrors('login')}" th:errors="*{login}"></div>
+        <label for="password">Введите пароль: </label>
+        <input class="input" type="password" th:field="*{password}" placeholder="Введите пароль" name="password" id="password">
+        <div style="font-size: 15px; color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+        <button class="btn_submit">Зарегистироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer">
+    <h2 class="logo_f">GreenShop</h2>
+    <img class="ss" th:src="@{/static/img/ss.png}"/>
+    <p>Единый многоканальный номер 8-800-111-11-11</p>
+  </div>
+
+</div>
+</body>
+</html>

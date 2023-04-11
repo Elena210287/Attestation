@@ -1,0 +1,145 @@
+#page{
+    margin: 0;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(90deg, #43d29c, #197664);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: 900;
+}
+
+.nav_item{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+    padding-left: 30px;
+}
+
+.nav_item:hover{
+    color: #9fffbf;
+}
+
+#container{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#page_form {
+    color: #197664;
+    font-size: 20px;
+    font-weight: 700;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    height: 570px;
+    width: 600px;
+    padding: 70px;
+    margin: 100px auto;
+    border: #197664 2px;;
+    border-radius: 40px;
+    background-image: radial-gradient(#e0fce9, #a3ffc1);
+    box-shadow: #155a03 0px 0px 15px 1px;
+}
+
+h2{
+    color: #197664;
+    text-align: center;
+}
+
+#page_form form{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn_submit{
+    display: grid;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #197664;
+    border-style: none;
+    border-radius: 35px;
+    margin-top: 35px;
+    padding-bottom: 5px;
+    padding-inline: 20px;
+}
+
+.btn_submit:hover{
+    background-color: #15493f;
+    color: #97ff9f;
+}
+
+.input {
+    height: 45px;
+    padding: 10px;
+}
+
+.form_error{
+    font-size: 15px;
+    color: red;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 1.2fr;
+    background-color: #197664;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    justify-items: start;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #197664;
+    text-align: center;
+    width: 100%;
+}
+
+.ss{
+    margin-top: 7px;
+    height: 40px;
+}
+
+.logo_f {
+    color: white;
+    font-weight: 900;
+    margin-top: 7px;
+}

@@ -1,0 +1,142 @@
+.page{
+    margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(90deg, #43d29c, #197664);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: 900;
+}
+
+.nav_item{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+    padding-left: 30px;
+}
+
+.nav_item:hover{
+    color: #9fffbf;
+}
+
+.container{
+    display: flex;
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.all_products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.card_item{
+    border: 2px solid #197664;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 20px;
+    transition: ease-out 0.3s;
+    width: 83%;
+}
+
+.card_item:hover{
+    box-shadow: #197664 0px 0px 15px 1px;
+}
+
+.card_image{
+    width: 200px;
+    align-self: center;
+    margin: auto;
+    justify-self: end;
+}
+
+.card_title{
+    color: black;
+    font-weight: bold;
+    justify-self: end;
+}
+
+.card_p{
+    color: black;
+    text-align: left;
+}
+
+.card_price{
+    color: black;
+    text-align: left;
+}
+
+.card_order{
+    color: #197664;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card_status{
+    color: #80237d;
+    font-weight: bold;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 1.2fr;
+    background-color: #197664;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    bottom:0;
+    width: 100%;
+    justify-items: start;
+    position: absolute;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #197664;
+    text-align: center;
+    width: 100%;
+}
+
+.ss{
+    margin-top: 7px;
+    height: 40px;
+}
+
+.logo_f {
+    color: white;
+    font-weight: 900;
+    margin-top: 7px;
+}

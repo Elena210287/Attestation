@@ -1,0 +1,165 @@
+.page{
+    margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(90deg, #43d29c, #197664);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: 900;
+}
+
+.nav_item{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+    padding-left: 30px;
+}
+
+.nav_item:hover{
+    color: #9fffbf;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin:auto auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.card_info{
+    display: grid;
+    margin: 0;
+    padding: inherit;
+}
+
+.desc{
+    text-align: justify;
+    font-size: 18px;
+    margin: 0;
+}
+
+.text_title{
+    text-align: center;
+    font-weight: bold;
+    color: #197664;
+    font-size: 20px;
+    margin: 0;
+}
+
+.price{
+    text-align: left;
+    font-weight: bold;
+    color: #197664;
+    font-size: 20px;
+    margin: 0;
+}
+
+.p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card_item_link{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #197664;
+    border-radius: 35px;
+    padding: 5px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.card_item_link:hover{
+    background-color: #43d29c;
+    color:  #175247;
+}
+
+.thumb{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+}
+
+.thumb img{
+    border: 2px solid #197664;
+    padding: 15px;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 278px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 1.2fr;
+    background-color: #197664;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    bottom:0;
+    width: 100%;
+    justify-items: start;
+    position: fixed;
+    z-index: -1;
+}
+
+.footer_p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #197664;
+    text-align: center;
+    width: 100%;
+}
+
+.img{
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.7);
+}
+
+.ss{
+    margin-top: 7px;
+    height: 40px;
+}
+
+.logo_f {
+    color: white;
+    font-weight: 900;
+    margin-top: 7px;
+}

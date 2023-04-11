@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link th:href="@{/style/user/infoProduct.css}" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link type="img" rel="icon" href="/static/img/icon.png">
+    <meta charset="UTF-8">
+    <title>Информация о товаре</title>
+    <script type="text/javascript">
+        function changeSizeImage(im) {
+            let win = "width=600,height=600"
+            newWin = window.open(im.src, "newWin", win);
+            newWin.focus();
+        }
+    </script>
+</head>
+<body>
+<div class="page">
+
+    <div class="header">
+        <h1 class="logo">GreenShop</h1>
+        <div class="nav">
+            <form action="/index">
+                <button class="nav_item">На главную</button>
+            </form>
+            <form method="get" th:action="@{/orders}">
+                <button class="nav_item">Заказы</button>
+            </form>
+            <form method="get" th:action="@{/cart}">
+                <button class="nav_item">Корзина</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card_info">
+            <p class="text_title" th:text="${product.getTitle()}"></p>
+            <p class="desc" th:text="'Описание: ' + ${product.getDescription()}"></p>
+            <p class="price" th:text="'Цена: ' + ${product.getPrice()} + ' руб.'"></p>
+            <p class="p" th:text="'Склад: ' + ${product.getWarehouse()}"></p>
+<!--            <p class="p" th:text="'Продавец: ' + ${product.getSeller()}"></p>-->
+            <p class="p" th:text="'Категория: ' + ${product.getCategory().getName()}"></p>
+            <a class="card_item_link" th:href="@{/cart/add/{id}(id=${product.getId()})}">Добавить в корзину</a>
+        </div>
+        <div class="thumb">
+            <img class="img" th:each="img : ${product.getImageList()}" th:src="'/img/' + ${img.getFileName()}" onclick="changeSizeImage(this)"/>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 class="logo_f">GreenShop</h2>
+        <img class="ss" th:src="@{/static/img/ss.png}"/>
+        <p class="footer_p">Единый многоканальный номер 8-800-111-11-11</p>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.page{
+    margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(90deg, #43d29c, #197664);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: 900;
+}
+
+.nav_item{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+    padding-left: 30px;
+}
+
+.nav_item:hover{
+    color: #9fffbf;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.edit_form{
+    width: 820px;
+    display: grid;
+    padding: 50px;
+    margin: 30px auto;
+    border: #197664 2px solid;
+    border-radius: 35px;
+    box-shadow: #197664 0px 0px 15px 1px;
+}
+
+.edit_form form{
+    margin: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit_form label{
+    font-weight: bold;
+    font-size: 20px;
+    color: #197664;
+}
+
+.user{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    color: #175247;
+}
+
+.btn_submit{
+    display: grid;
+    width: 40%;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #197664;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 5px;
+    border-style: none;
+}
+
+.btn_submit:hover{
+    background-color: #43d29c;
+    color:  #175247;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 1.2fr;
+    background-color: #197664;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    justify-items: start;
+}
+
+.footer_p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.h2{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #197664;
+    text-align: center;
+    width: 100%;
+}
+
+.ss{
+    margin-top: 7px;
+    height: 40px;
+}
+
+.logo_f {
+    color: white;
+    font-weight: 900;
+    margin-top: 7px;
+}
